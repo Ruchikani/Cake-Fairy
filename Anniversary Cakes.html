@@ -1,0 +1,224 @@
+<html lang="en">
+<head>
+	<title>Anniversary Cakes</title>
+	<link rel="stylesheet" href="style03.css">
+</head>
+
+<body>
+	<div class="main">
+	<div class="navbar">
+	<div class="icon">
+		<h2 class="logo">Cake Fairy</h2>
+	</div>
+
+	<div class="menu">
+		<ul>
+		<li><a href="Home.html">HOME</a></li>
+		<li><a href="Home.html">SERVICES</a></li>
+		<li><a href="Home.html">ACADEMY</a></li>
+		<li><a href="Home.html">ABOUT_US</a></li>
+		<li><a href="Home.html">CONTACT_US</a></li>
+		</ul>
+	</div>
+
+	<div class="search">
+		<input class="srch" id="link_id" type="search" name="" placeholder="Type to Text">
+		<a href="#"> <button class="btn" id="link_str" onclick="link()">Search</button></a>
+	</div>
+	</header>
+	
+  <script type="text/javascript">
+    function link() {
+      var link_s = document.getElementById('link_id').value;
+      document.getElementById('link_str').innerHTML = link_s.link()
+    }
+  </script>
+
+	</div>
+	<div class="back">
+	<div class="gallery">
+		<br><h1>Anniversary Collection</h1>
+
+			<img src="23.jpg" alt="" width="300px" height="300px">
+			<img src="29.jpg" alt="" width="300px" height="300px">
+			<img src="30.jpg" alt="" width="300px" height="300px">
+			<img src="104.jpg" alt="" width="300px" height="300px">
+			<img src="118.jpg" alt="" width="300px" height="300px">
+			<img src="161.jpg" alt="" width="300px" height="300px">
+			<img src="163.jpg" alt="" width="300px" height="300px">
+			<img src="164.jpg" alt="" width="300px" height="300px">
+	</div>
+	</div>
+</div>
+	
+<section>
+	<div class="container">
+	<form action="https://script.google.com/macros/s/AKfycbweLwP3ISDlbgTGa6wNKjeIh3e14iiylnY76zF1ZtvwQTJBj5ZZGbp6dPig1myYEO0/exec" method="POST">
+		<h2>Cake Order Form</h2>
+
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="date" required="required">
+				<span class="text">Order Date (DD/MM/YY)</span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="name" required="required">
+				<span class="text">Customer Name</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="address" required="required">
+				<span class="text">Customer Address</span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="mobile" required="required">
+				<span class="text">Phone Nmber</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="cdate" required="required">
+				<span class="text">Cake Date Required (DD/MM/YY)</span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="daddress" required="required">
+				<span class="text">Delivery Address</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>	
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="tires" required="required">
+				<span class="text">Cake Tires</span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="size" required="required">
+				<span class="text">Cake Size & Shapes</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="flavour" required="required">
+				<span class="text">Cake Flavour</span>
+				<span class="line"></span>
+			</div>
+		</div>
+		<div class="col">
+			<div class="inputBox">
+				<input type="text" name="colour" required="required">
+				<span class="text">Cake Colour Schema</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row100">
+		<div class="col">
+			<div class="inputBox textarea">
+				<textarea name="inscription" required="required"></textarea>
+				<span class="text">Cake Inscription & Other Details</span>
+				<span class="line"></span>
+			</div>
+		</div>
+	</div>
+	<div class="row100">
+		<div class="col">
+				<input type="submit" value="Place Order">
+		</div>
+	</div>
+	</form>
+	</div>
+</section>
+
+<!--https://script.google.com/macros/s/AKfycbweLwP3ISDlbgTGa6wNKjeIh3e14iiylnY76zF1ZtvwQTJBj5ZZGbp6dPig1myYEO0/exec-->
+
+<script>
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbweLwP3ISDlbgTGa6wNKjeIh3e14iiylnY76zF1ZtvwQTJBj5ZZGbp6dPig1myYEO0/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+</script>
+
+<!--Contact Us-->
+	<div class="contact_us" id="contact_us">
+		<div class="box_container">
+			<div class="mainBox">
+				<div class="content">
+					<a href="#"><img src="" at=""></a>
+					<h1 class="logoName">Cake Fairy</h1>
+				</div>
+				<p>We Make Your Dream Cake.</p>
+			</div>
+			<div class="box">
+				<h3>Quick Link</h3>
+				<a href="Home.html"> <i class="fas fa-arrow-right"> </i> Home</a>
+				<a href="Home.html"> <i class="fas fa-arrow-right"> </i> Services</a>
+				<a href="Home.html"> <i class="fas fa-arrow-right"> </i> Academy</a>
+				<a href="Home.html"> <i class="fas fa-arrow-right"> </i> About Us</a>
+				<a href="Home.html"> <i class="fas fa-arrow-right"> </i> Contact Us</a>
+			</div>
+			<div class="box">
+				<h3>Extra Link</h3>
+				<a href="Birthday Cakes.html"> <i class="fas-fa-arrow-right"> </i> Birthday Cakes</a>
+				<a href="Anniversary Cakes.html"> <i class="fas fa-arrow-right"> </i> Anniversary Cakes</a>
+				<a href="Wedding Cakes.html"> <i class="fas fa-arrow-right"> </i> Wedding Cakes</a>
+				<a href="Valentine's Day Cakes.html"> <i class="fas fa-arrow-right"> </i> Valentine's Day Cakes</a>
+				<a href="Fondant Cakes.html"> <i class="fas fa-arrow-right"> </i> Fondant Cakes</a>
+				<a href="Dark Chocolate Drip Cakes.html"> <i class="fas fa-arrow-right"> </i> Dark Chocolate Drip Cakes</a>
+				<a href="White Chocolate Drip Cakes.html"> <i class="fas fa-arrow-right"> </i> White Chocolate Drip Cakes</a>
+				<a href="Jar Cakes.html"> <i class="fas fa-arrow-right"> </i> Jar Cakes</a>
+				<a href="Cup Cakes.html"> <i class="fas fa-arrow-right"> </i> Cup Cakes</a>
+			</div>
+			<div class="box">
+				<h3>Contact Info</h3>
+				<a href="#"> <i class="fas fa-phone"> </i> +94 703001906</a>
+				<a href="#"> <i class="fas fa-envelope"> </i> onlinecakefairy@gmail.com</a>
+				<a href="#"> <i class="fas fa-whatsapp"> </i> +94 703001906</a>
+				<a href="#"> <i class="fas fa-facebook"> </i> Cake Fairy</a>
+				<a href="#"> <i class="fas fa-map-marker"> </i> Nivithigala Road-Yakdehiwaththa</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

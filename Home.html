@@ -1,0 +1,400 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Cake Fairy</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="style02.css">
+	<script src="https://kit.fontawesome.com/1cf483120b.js" crossorigin="anonymous"></script>	
+	<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi0RCj8aLdKFX-cvYkW6kDveuaUlMnpes&libraries=places&callback=initMap"></script> 
+</head>
+
+<body>
+	<!-- Header-->
+	<header class="header">
+		<div class="logocontent">
+			<h2 class="logoname">Cake Fairy</h2>
+		</div>
+
+		<nav class="navbar">
+			<a href="#home">HOME</a>
+			<a href="#services">SERVICES</a>
+			<a href="#academy">ACADEMY</a>
+			<a href="#about us">ABOUT_US</a>
+			<a href="#contact_us">CONTACT_US</a>
+		</nav>
+
+	<div class="search">
+		<input class="srch" id="link_id" type="search" name="" placeholder="Type to Text">
+		<a href="#"> <button class="btn" id="link_str" onclick="link()">Search</button></a>
+	</div>
+	
+	<div id="menu"><i class="fas fa-bars"></i></div>
+		
+	</header>
+	
+  <script type="text/javascript">
+    function link() {
+      var link_s = document.getElementById('link_id').value;
+      document.getElementById('link_str').innerHTML = link_s.link()
+    }
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+	$(document).ready(function()
+	{
+		$('#menu').click(function()
+		{
+			$(this).toggleClass('fas fa-times');
+			$('.navbar').toggleClass('nav-toggle');
+		});
+	});
+  </script>
+	
+	<!--Home-->
+	<section class="home" id="home">
+		<div class="homecontent">
+			<h2>We Make <br> Your Dream Cake</h2>
+			<br>
+			<p>We design delicious cakes for many events such as <br> birthday party, weddings, wedding anniversary,
+			and also many offical events. <br>We customize your orders under low price range and within short
+			time period. <br><br>We always here for you.</p><br>
+		<div class="home-btn">
+			<a href="#"><button>Hurry Up!</button></a>
+		</div>
+		</div>
+	</section>
+	
+
+
+
+	<!--Services-->
+	<section class="services" id="services">
+		<div class="heading">
+			<h2>Our Services</h2>
+		</div>
+
+		<div class="services-row">
+			<div class="box">
+				<img src="5.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Birthday Cakes</h3>
+				<br>
+				<p>We decorate your special day with beautiful yummy cakes. <br>Celebrate your birthday with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+						<a href="BirthDay Cakes.html"><button1>See More Products</button1></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="6.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Anniversary Cakes</h3>
+				<br>
+				<p>We decorate your loving day with beautiful yummy cakes. <br>Celebrate your anniversary with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Anniversary Cakes.html"><button2>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="7.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Wedding Cakes</h3>
+				<br>
+				<p>We decorate your special day with beautiful yummy cakes. <br>Celebrate your wedding chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Wedding Cakes.html"><button3>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="9.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Valentine's Day Cakes</h3>
+				<br>
+				<p>We decorate your loving day with beautiful yummy cakes with lovers. <br>Celebrate valentine's day with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Valentine's Day Cakes.html"><button4>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="13.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Fondant Cakes</h3>
+				<br>
+				<p>We decorate your special days with beautiful yummy cakes. <br>Celebrate day with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Fondant Cakes.html"><button5>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="8.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Dark Chocolate Drip Cakes</h3>
+				<br>
+				<p>We decorate your special days with beautiful yummy cakes. <br>Celebrate day with dark chocolates..</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Dark Chocolate Drip Cakes.html"><button6>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+
+			<div class="box">
+				<img src="10.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>White Chocolate Drip Cakes</h3>
+				<br>
+				<p>We decorate your special days with beautiful yummy cakes. <br>Celebrate day with white chocolate.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="White Chocolate Drip Cakes.html"><button7>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+			
+			<div class="box">
+				<img src="12.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Jar Cakes</h3>
+				<br>
+				<p>We decorate your special days with beautiful yummy cakes. <br>Jar cakes with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Jar Cakes.html"><button8>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+	
+			<div class="box">
+				<img src="11.jpg" alt="" height="300px" width="600px"><br>
+			<div class="servicesContent">
+				<h3>Cup Cakes</h3>
+				<br>
+				<p>We decorate your special days with beautiful yummy cakes. <br>Cup cakes with chocolate, vanila or any other tastes.</p><p>Try it now!</p><br>
+				<div class="orderNow">
+					<a href="Cup Cakes.html"><button9>See More Products</button></a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!--Academy-->
+	<section class="academy" id="academy">
+		<div class="heading">
+			<h2>Our Academy</h2>
+		</div>
+	</section>
+
+	<div class="content5">
+		<h2>Cake Fairy Academy</h2><br><br>
+
+		<h4>Our Cake Academy that makes geniuses super geniuses.</h4><br>
+
+		<p>Come and learn the tips and tricks to a successful bake every time from our experienced cake chefs. In this course you will learn to basic steps to a cake basic baking and cake designs with many ways. We will show you some great
+		secrets for different cake baking methods, as well as simple decorative touches to give you a showstopper finish.<p><br>
+		<p>Here is a great opportunity to polish your skills with Cake Basic and Cake Decorating Course conducted by Cake Fairy Academy.<p><br>
+
+		<h4>During the class you'll learn about:</h4><br>
+
+		<ol>
+			<li>Cake Batter Recipe</li>
+			<li>Butter Icing Recipe</li>
+			<li>Fondant Icing Recipe</li>
+			<li>Complete Butter Icing Birthday Cake</li>
+			<li>Complete Fondant Covering Engagement Cake & Suger Flower Arrangements</li>
+			<li>Dark Chocolate Drip Cake</li>
+			<li>White Chocolate Drip Cake</li>
+			<li>Butter Icing Border</li>
+			<li>Cup Cake</li>
+		</ol>
+		<br>
+	
+		<p>The cake course organized by Nivithigala, Yakdehiwaththa Cake Fairy Academy is conducted in multiple ways. We conducted our basic and cake decorating course at Cake Fairy Institute and Samathwi High Education Institute at Karawita as well
+		as via zoom technology. For your convenient location at low course fees.</p> <br>
+
+		<h4>Deatils about the Course</h4><br>
+
+		<table>
+			<tr>
+				<th>Conducted By</th>
+				<td>	Ms. Kasuni Nimasha</td>
+			</tr>
+			<tr>
+				<th>How to Join</th>
+				<td>	Cake Fairy Academy - Nivithigala</td>
+			</tr>
+			<tr>
+				<th> </th>
+				<td>	A-One, Awissawella</td>
+			</tr>
+			<tr>
+				<th> </th>
+				<td>	Samathwi High Education Institute - Karawita</td>
+			</tr>
+			<tr>
+				<th> </th>
+				<td>	Via Zoom Platform</td>
+			</tr>
+			<tr>
+				<th>Course Duration</th>
+				<td>	12 Weeks</td>
+			</tr>
+			<tr>
+				<th>Course Fees</th>
+				<td>	Rs. 25,000/-</td>
+			</tr>
+			<tr>
+				<th>At the End of the Course</th>
+				<td>	A valuable certificate</td>
+			</tr>
+		</table><br><br>
+
+	<h4>Registration Form for the Course</h4>
+	</div>
+
+	<div class="button-box">
+		<div id="btn"></div>
+		<h2>Registration Form</h2>
+	</div>
+
+	<div class="logform" id="logform">
+		<div class="form-box">
+			<form id="register" class="input-group-register" method="POST" name="google-sheet" action="https://script.google.com/macros/s/AKfycbzq2wUYpFXOX0NX6tAX13L9OFvz4RFd7N0lAZ5O5R66RzS3fon0e_zJPOJ6EaNe7OBm/exec">
+				<input type="text" class="input-field" placeholder="First Name" name="first_name" required>
+				<input type="text" class="input-field" placeholder="Last Name" name="last_name" required>
+				<input type="text" class="input-field" placeholder="Address Line 01" name="addressLine_I" required>
+				<input type="text" class="input-field" placeholder="Address Line 02" name="addressLine_II" required>
+				<input type="text" class="input-field" placeholder="ID Number" name="idNumber" required>
+				<input type="email" class="input-field" placeholder="Email" name="email" required>
+				<input type="text" class="input-field" placeholder="Telephone Number" name="telephone_number" required>
+				<button type="submit" class="submit-btn" name="submit">Register</button>
+			</form>
+			
+			
+<script>
+   const form = document.querySelector("#form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzq2wUYpFXOX0NX6tAX13L9OFvz4RFd7N0lAZ5O5R66RzS3fon0e_zJPOJ6EaNe7OBm/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Your Registration is Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+</script>
+
+			
+		</div>
+	</div>
+	</div>
+
+	<!--About Us-->
+	<section class="about us" id="about us">
+		<div class="heading">
+			<h2>About Us</h2>
+		</div>
+	</section>
+
+	<div class="about_us" id="about_us">
+
+		<h4>About the Art of Cakes</h4><br>		
+
+		<p>Cake decorating is the art of decorating a cake for special occasions such as birthdays, weddings, national or religious holidays, or as a promotional item.
+		It is a form of sugar art that uses materials such as icing, fondant, and other edible decorations. An artisan may take on simple or elaborate three-dimensional 
+		shapes as a part of the decoration, or on the entire cake. Chocolate is commonly used to decorate cakes as it can be melted and mixed with cream to make 
+		a ganache, or cocoa powder can be lightly dusted on top of a cake.</p><br>
+
+		<p>A cake may be decorated using small adornments or embellishments made separately, and placed on top of or around the cake, or may be decorated by 
+		being covered with a form of icing or paste, either alone or in accompaniment to other decorations. Cake decorations can be made of edible material and 
+		food-safe plastics.Cake decorating has become a unique art form, with examples ranging from simply decorated single-layer cakes, to complex, multi-layered 
+		three-dimensional creation with extensive edible decorations.</p><br>
+
+		<h4>Who is decorate Fairy Cakes</h4><br>
+
+		<p>Cake Fairy will be a small and convenient cake academy located in Yakdehiwaththa-Nivithigala. Cake Fairy specializes in custom-made cakes for
+		 every occasion, cupcakes, chocolate cakes, jar cakes, fondant cakes, and dark and white chocolate drip cakes. Cake Fairy makes fresh treats every morning and specializes in their 
+		custom-made to order cakes and cupcakes. Cake Fairy is owned by Ms. Kasuni Nimasha. Ms. Kasuni Nimasha is 
+		known for being able to turn a clients’ vision for their cake into reality. Whether you are popping in for some tasty treats or need to order a cake for a 
+		special event, Cake Fairy will satisfy your need. The business model is simple as we serve up treats for consumers of all budgets and backgrounds.</p><br>
+
+		<h4>Fairy Cake History</h4><br>
+
+		<p>Ms. Kasuni Nimasha is known around Rathnapura as the go-to team for cakes for decades. 
+		The duo has been baking together for most of Kasuni’s life and it has always been a dream and goal of her to own her own cake academy. She has 
+		been baking in Kasuni’s kitchen for years and would welcome more oven and prepping space in a retail location. Over the years, Kasuni 
+		has made a name for herselves in the Rathnapura community by serving up their delicious treats for local events, school and charity functions, 
+		and by entering and winning several statewide cake decorating competitions.<p><br>
+
+		<p>Since incorporation, Cake Fairy has achieved the following milestones:</p><br>
+
+		<li>Developed the company’s branding image, social media, and website.</li>
+		<li>Determined the academy’s storefront location.</li>
+		<li>Began a new cake basic and decorating course in new institute.</li>
+		<li>Began recruiting staff and personnel that meets their customer service requirements.</li>
+	</div><br><br>
+
+	<!--Contact Us-->
+	<section class="contact_us" id="contact_us">
+		<div class="box_container">
+			<div class="mainBox">
+				<div class="content">
+					<a href="#"><img src="" at=""></a>
+					<h1 class="logoName">Cake Fairy</h1>
+				</div>
+				<p>We Make Your Dream Cake.</p>
+			</div>
+			<div class="box">
+				<h3>Quick Link</h3>
+				<a href="#home"> <i class="fas fa-arrow-right"> </i> Home</a>
+				<a href="#services"> <i class="fas fa-arrow-right"> </i> Services</a>
+				<a href="#academy"> <i class="fas fa-arrow-right"> </i> Academy</a>
+				<a href="#about us"> <i class="fas fa-arrow-right"> </i> About Us</a>
+				<a href="#contact_us"> <i class="fas fa-arrow-right"> </i> Contact Us</a>
+			</div>
+			<div class="box">
+				<h3>Extra Link</h3>
+				<a href="BirthDay Cakes.html"> <i class="fas fa-arrow-right"> </i> Birthday Cakes</a>
+				<a href="Anniversary Cakes.html"> <i class="fas fa-arrow-right"> </i> Anniversary Cakes</a>
+				<a href="Wedding Cakes.html"> <i class="fas fa-arrow-right"> </i> Wedding Cakes</a>
+				<a href="Valentine's Day Cakes.html"> <i class="fas fa-arrow-right"> </i> Valentine's Day Cakes</a>
+				<a href="Fondant Cakes.html"> <i class="fas fa-arrow-right"> </i> Fondant Cakes</a>
+				<a href="Dark Chocolate Drip Cakes.html"> <i class="fas fa-arrow-right"> </i> Dark Chocolate Drip Cakes</a>
+				<a href="White Chocolate Drip Cakes.html"> <i class="fas fa-arrow-right"> </i> White Chocolate Drip Cakes</a>
+				<a href="Jar Cakes.html"> <i class="fas fa-arrow-right"> </i> Jar Cakes</a>
+				<a href="Cup Cakes.html"> <i class="fas fa-arrow-right"> </i> Cup Cakes</a>
+			</div>
+			<div class="box">
+				<h3>Contact Info</h3>
+				<a href="#"> <i class="fas fa-phone"> </i> +94 703001906</a>
+				<a href="#"> <i class="fas fa-envelope"> </i> onlinecakefairy@gmail.com</a>
+				<a href="#"> <i class="fas fa-whatsapp"> </i> +94 703001906</a>
+				<a href="#"> <i class="fas fa-facebook"> </i> Cake Fairy</a>
+				<a href="#"> <i class="fas fa-map-marker  "> </i> Nivithigala Road-Yakdehiwaththa</a>
+			</div>
+		</div>
+	</section>
+	<script language="vbscript" type="text/vbscript">
+	<script src="home.js"></script>
+</body>
+</html>
